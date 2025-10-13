@@ -31,9 +31,6 @@
   font-size: 2.9rem;
 }
 
-.carousel-item img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
+.carouse-img{
+
 }
