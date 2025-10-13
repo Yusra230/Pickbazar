@@ -1,0 +1,28 @@
+:root {
+  --main-color: #009F7F;
+  --text-color: #333;
+  --padding-size: 10px;
+}
+
+.nav-btn {
+  background-color:var(--main-color);
+  color: white;
+}
+
+.hero {
+  background-image: url('images/hero.png'); /* Replace with your hero image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full screen height */
+  position: relative;
+  /* color: ; */
+}
+
+/* Center hero content */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
