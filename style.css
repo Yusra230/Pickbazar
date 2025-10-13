@@ -50,8 +50,21 @@
 }
 
 /* OFFERS PAGE  */
-.offers {
+.offers-section {
   /* border: 2px solid red; */
+}
+
+.offers-container {
   background-color: #E2E8F0;
   padding: 6rem 0;
+
+}
+
+.offers {
+
+}
+
+.offers-img {
+  height: 12rem;
+  width: 12rem;
 }
