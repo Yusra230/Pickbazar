@@ -61,10 +61,17 @@
 }
 
 .offers {
-
+  /* margin-top: 3rem; */
+  background-color: #F3F4F6;
+  padding: 4.5rem 4rem;
 }
 
 .offers-img {
-  height: 12rem;
-  width: 12rem;
+  height: 13rem;
+  width: 13rem;
+}
+
+.green-color {
+  color: var(--main-color);
+  cursor: pointer;
 }
