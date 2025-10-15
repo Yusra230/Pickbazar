@@ -88,7 +88,20 @@
 }
 
 .authors-heading {
-  color:  var(--main-color);
+  color: var(--main-color);
   font-weight: bold;
   margin: 1rem 0;
+}
+
+.author-img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+
+.authors {
+  gap: 5rem;
+  margin-top: 6rem;
 }
