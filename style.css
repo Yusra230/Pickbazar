@@ -78,6 +78,17 @@
 
 /* AUTHORS  */
 .search {
-  max-width: 40rem;
-  min-width: 100%;
+  max-width: 45rem;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  border: 1px solid #F3F4F6;
+  border-radius: 5px;
+  background-color: #F3F4F6;
+  margin-top: 1rem;
+}
+
+.authors-heading {
+  color:  var(--main-color);
+  font-weight: bold;
+  margin: 1rem 0;
 }
