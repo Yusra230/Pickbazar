@@ -75,3 +75,9 @@
   color: var(--main-color);
   cursor: pointer;
 }
+
+/* AUTHORS  */
+.search {
+  max-width: 40rem;
+  min-width: 100%;
+}
