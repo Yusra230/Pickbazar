@@ -107,7 +107,7 @@
     <div class="container d-flex flex-wrap justify-content-between align-items-stretch gap-5 px-5">
 
       <!-- Left Side -->
-      <div class="contact-info" style="flex: 0 0 30%;">
+      <div class="contact-info">
         <img src="images/contact.svg" class="img-fluid rounded mb-3" alt="Contact Image">
         <h6>Address</h6>
         <p class="contact-para">NY State Thruway, New York, USA</p>
@@ -124,22 +124,38 @@
       <!-- Right Side -->
       <div class="contact-form flex-fill" style="flex: 1;">
         <h4 class="mb-4 fw-bolder">How can we improve your experience?</h4>
+
         <form>
-          <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Name">
+          <div class="row mb-3">
+            <!-- Name -->
+            <div class="col-md-6 mb-3 mb-md-0">
+              <label for="name" class="form-label fw-semibold">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <!-- Email -->
+            <div class="col-md-6">
+              <label for="email" class="form-label fw-semibold">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
           </div>
+
+          <!-- Subject -->
           <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Email">
+            <label for="subject" class="form-label fw-semibold">Subject</label>
+            <input type="text" class="form-control" id="subject" >
           </div>
+
+          <!-- Description -->
           <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Subject">
+            <label for="description" class="form-label fw-semibold">Description</label>
+            <textarea class="form-control" id="description" rows="4"></textarea>
           </div>
-          <div class="mb-3">
-            <textarea class="form-control" rows="4" placeholder="Description"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary px-4">Submit</button>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn px-4 submit-btn">Submit</button>
         </form>
       </div>
+
 
     </div>
   </section>
