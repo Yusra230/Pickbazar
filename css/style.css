@@ -140,6 +140,10 @@
   transform: scale(0.7); /* make it smaller while keeping proportions */
 }
 
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(-180deg) scale(0.7);
+}
+
 .category-button {
   /* background-color: #f1f3f5; */
   color: #333;
