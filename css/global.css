@@ -1,0 +1,15 @@
+:root {
+  --main-color: #009F7F;
+  --text-color: #333;
+  --padding-size: 10px;
+}
+
+.nav-btn {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.offers-container {
+  background-color: #E2E8F0;
+  padding: 6rem 0;
+}
