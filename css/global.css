@@ -7,6 +7,12 @@
 .nav-btn {
   background-color: var(--main-color);
   color: white;
+  /* padding: 0 1.8rem; */
+}
+
+.nav-btn:hover {
+  background-color: #058e73;
+  color: white;
 }
 
 select {

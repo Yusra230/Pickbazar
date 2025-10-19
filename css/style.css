@@ -22,6 +22,35 @@
   font-size: 2.9rem;
 }
 
+.hero-para {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.search-items {
+  padding: 0.9rem 2rem;
+  background-color: white;
+}
+
+.search-items:focus {
+  border: 1px solid var(--main-color);
+}
+
+.search-items::placeholder {
+  font-size: 0.87rem;
+}
+
+.search-btn {
+  background-color: var(--main-color);
+  color: white;
+  padding: 0 2rem;
+}
+
+.search-btn:hover {
+  background-color: #058e73;
+  color: white;
+}
+
 .carousel-img {
   /* width: 35rem; */
   height: 14rem;
