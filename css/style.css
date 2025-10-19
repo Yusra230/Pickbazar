@@ -298,6 +298,38 @@
   color: white;
 }
 
+.cart-btnn {
+  position: fixed;
+  right: 0px;          /* distance from right edge */
+  bottom: 50%;         /* distance from bottom */
+  background-color: var(--main-color); /* Bootstrap blue */
+  color: white;
+  padding: 15px 10px;
+  /* border-radius: 10px; */
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.cart-btnn:hover {
+  background-color: #058e73;
+}
+
+.cart-btn-price {
+  background-color: white;
+  color: var(--main-color);
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+}
 
 @media (max-width: 768px) {
   .items-categories {
