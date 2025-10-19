@@ -147,7 +147,7 @@
 .category-button {
   /* background-color: #f1f3f5; */
   color: #333;
-  font-size: 0.9rem;
+  font-size: 0.87rem;
   font-weight: 600;
 }
 
@@ -160,9 +160,13 @@
   box-shadow: none;
 }
 
+
+.accordion-body {
+  margin-left: 1.6rem;
+}
 .accordion-body a {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.87rem;
   /* padding: 0.2rem 1rem; */
   text-decoration: none;
   color: black;
