@@ -13,3 +13,7 @@
   background-color: #E2E8F0;
   padding: 6rem 0;
 }
+
+.nav-link {
+  color: black !important;
+}

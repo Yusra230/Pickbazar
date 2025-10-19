@@ -137,11 +137,11 @@
 }
 
 .accordion-button::after {
-  transform: scale(0.7); /* make it smaller while keeping proportions */
+  transform: scale(0.6); /* make it smaller while keeping proportions */
 }
 
 .accordion-button:not(.collapsed)::after {
-  transform: rotate(-180deg) scale(0.7);
+  transform: rotate(-180deg) scale(0.6);
 }
 
 .category-button {
