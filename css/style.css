@@ -19,7 +19,7 @@
 }
 
 .hero-heading {
-  font-size: 2.9rem;
+  font-size: 2.7rem;
 }
 
 .hero-para {
@@ -166,7 +166,8 @@
 }
 
 .accordion-button::after {
-  transform: scale(0.6); /* make it smaller while keeping proportions */
+  transform: scale(0.6);
+  /* make it smaller while keeping proportions */
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -193,6 +194,7 @@
 .accordion-body {
   margin-left: 1.6rem;
 }
+
 .accordion-body a {
   display: block;
   font-size: 0.87rem;
@@ -300,8 +302,9 @@
 
 .cart-btnn {
   position: fixed;
-  right: 0px;          /* distance from right edge */
-  top: 45%;        
+  right: 0px;
+  /* distance from right edge */
+  top: 45%;
   background-color: var(--main-color);
   color: white;
   padding: 15px 10px;
@@ -314,7 +317,7 @@
   gap: 10px;
   font-weight: 500;
   font-size: 0.9rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.3s ease;
   z-index: 1000;
@@ -340,4 +343,31 @@
     max-width: 100%;
   }
 
+
+}
+
+@media (max-width: 1431px) {
+
+  .hero-heading {
+    font-size: 1.8rem;
+  }
+
+  .hero-para {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+
+  /* hide background image on md and below */
+  .hero {
+    background-image: none !important;
+    height: auto !important;
+    /* adjust height since no background */
+  }
+
+  /* hide hero content */
+  .hero-content {
+    display: none !important;
+  }
 }
