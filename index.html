@@ -17,14 +17,13 @@
   <div class="hero">
 
     <!-- Header -->
-    <div class=" me-4 ms-4">
+    <!-- <div class=" me-4 ms-4">
       <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-2 header-overlay">
         <div class="col-md-3 mb-2 mb-md-0 d-flex align-items-center gap-5">
           <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
             <img src="images/Logo.png" alt="" height="30">
           </a>
 
-          <!-- Category Dropdown -->
           <select class="form-select" style="width: 120px;">
             <option selected disabled>Grocery</option>
             <option value="grocery">Grocery</option>
@@ -40,12 +39,11 @@
           </select>
         </div>
 
-        <!-- Navigation -->
+        Navigation
         <ul class="nav mb-2 mb-md-0 ms-auto me-3">
           <li><a href="#" class="nav-link px-3 text-secondary">Shops</a></li>
           <li><a href="offers.html" class="nav-link px-3 text-secondary">Offers</a></li>
           <li><a href="contact.html" class="nav-link px-3 text-secondary">Contacts</a></li>
-          <!-- <li><a href="#" class="nav-link px-3 text-secondary">Pages</a></li> -->
           <li>
             <div class="dropdown-center">
               <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,13 +57,97 @@
           </li>
         </ul>
 
-        <!-- Buttons -->
         <div class="text-end">
           <button type="button" class="btn me-2 nav-btn">Join</button>
           <button type="button" class="btn nav-btn">Become a Seller</button>
         </div>
       </header>
-    </div>
+    </div> -->
+
+    <nav class="navbar navbar-expand-lg bg-transparent py-4 mb-2 header-overlay me-lg-3 ms-lg-3">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+    
+        <!-- HAMBURGER (Visible on mobile/tablet) -->
+        <button class="navbar-toggler border-0 shadow-none me-2 d-lg-none" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- LOGO -->
+        <a class="navbar-brand d-flex align-items-center order-0" href="/">
+          <img src="images/Logo.png" alt="Logo" height="30">
+        </a>
+    
+        <!-- CATEGORY (Visible only on desktop) -->
+        <select class="form-select d-none d-lg-block ms-3" style="width: 120px;">
+          <option selected disabled>Grocery</option>
+          <option value="grocery">Grocery</option>
+          <option value="bakery">Bakery</option>
+          <option value="makeup">Makeup</option>
+          <option value="bags">Bags</option>
+          <option value="clothing">Clothing</option>
+          <option value="furniture">Furniture</option>
+          <option value="daily-needs">Daily Needs</option>
+          <option value="books">Books</option>
+          <option value="gadget">Gadget</option>
+          <option value="medicine">Medicine</option>
+        </select>
+    
+        <!-- NAV LINKS (Desktop) -->
+        <ul class="navbar-nav ms-auto me-3 d-none d-lg-flex align-items-center">
+          <li class="nav-item"><a href="#" class="nav-link px-3 text-secondary">Shops</a></li>
+          <li class="nav-item"><a href="offers.html" class="nav-link px-3 text-secondary">Offers</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link px-3 text-secondary">Contacts</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-3 text-secondary" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="authors.html">Authors</a></li>
+              <li><a class="dropdown-item" href="help.html">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+    
+        <!-- BUTTONS -->
+        <div class="text-end order-lg-1">
+          <button type="button" class="btn me-2 nav-btn d-md-none d-lg-inline">Join</button>
+          <button type="button" class="btn nav-btn">Become a Seller</button>
+        </div>
+    
+        <!-- OFFCANVAS MENU (Visible only on mobile/tablet) -->
+        <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+          <div class="offcanvas-header d-flex justify-content-between align-items-center">
+            <!-- ✅ LOGO instead of "Menu" text -->
+            <a href="/" class="d-inline-flex align-items-center text-decoration-none">
+              <img src="images/Logo.png" alt="Logo" height="30">
+            </a>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+    
+          <div class="offcanvas-body d-flex flex-column">
+            <!-- Nav Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item"><a href="#" class="nav-link text-secondary">Shops</a></li>
+              <li class="nav-item"><a href="offers.html" class="nav-link text-secondary">Offers</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link text-secondary">Contacts</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-secondary" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="authors.html">Authors</a></li>
+                  <li><a class="dropdown-item" href="help.html">FAQ</a></li>
+                </ul>
+              </li>
+            </ul>
+    
+          
+          </div>
+        </div>
+      </div>
+    </nav>
+    
 
     <!-- Hero Content -->
     <div class="px-4 py-5 text-center hero-content">
@@ -392,8 +474,8 @@
 
   </section>
 
-   <!-- Fixed Cart Button -->
-   <div class="cart-btnn">
+  <!-- Fixed Cart Button -->
+  <div class="cart-btnn">
     <span><img src="icons/bag.svg" class="me-1 align-middle" alt="">0 item</span>
     <span class="cart-btn-price">$0.00</span>
   </div>

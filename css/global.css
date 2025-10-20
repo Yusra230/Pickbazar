@@ -42,3 +42,9 @@ textarea:focus {
   box-shadow: none !important;
 }
 
+.navbar-toggler {
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+
