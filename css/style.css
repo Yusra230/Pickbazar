@@ -301,8 +301,8 @@
 .cart-btnn {
   position: fixed;
   right: 0px;          /* distance from right edge */
-  bottom: 50%;         /* distance from bottom */
-  background-color: var(--main-color); /* Bootstrap blue */
+  top: 45%;        
+  background-color: var(--main-color);
   color: white;
   padding: 15px 10px;
   /* border-radius: 10px; */
