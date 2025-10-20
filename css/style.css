@@ -334,6 +334,11 @@
   border-radius: 8px;
 }
 
+.filter-btn {
+  background-color: var(--main-color);
+  color: white;
+}
+
 @media (max-width: 768px) {
   .items-categories {
     flex-direction: column;
@@ -369,5 +374,13 @@
   /* hide hero content */
   .hero-content {
     display: none !important;
+  }
+
+  .items-categories {
+    flex-direction: column;
+  }
+
+  .cart-btnn {
+    display: none;
   }
 }

@@ -17,18 +17,18 @@
   <div class="hero">
     <nav class="navbar navbar-expand-lg bg-transparent py-4 mb-2 header-overlay me-lg-3 ms-lg-3">
       <div class="container-fluid d-flex align-items-center justify-content-between">
-    
+
         <!-- HAMBURGER (Visible on mobile/tablet) -->
-        <button class="navbar-toggler border-0 shadow-none me-2 d-lg-none" type="button"
-          data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        <button class="navbar-toggler border-0 shadow-none me-2 d-lg-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu" aria-controls="mobileMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <!-- LOGO -->
         <a class="navbar-brand d-flex align-items-center order-0" href="/">
           <img src="images/Logo.png" alt="Logo" height="30">
         </a>
-    
+
         <!-- CATEGORY (Visible only on desktop) -->
         <select class="form-select d-none d-lg-block ms-3" style="width: 120px;">
           <option selected disabled>Grocery</option>
@@ -43,7 +43,7 @@
           <option value="gadget">Gadget</option>
           <option value="medicine">Medicine</option>
         </select>
-    
+
         <!-- NAV LINKS (Desktop) -->
         <ul class="navbar-nav ms-auto me-3 d-none d-lg-flex align-items-center">
           <li class="nav-item"><a href="#" class="nav-link px-3 text-secondary">Shops</a></li>
@@ -60,22 +60,23 @@
             </ul>
           </li>
         </ul>
-    
+
         <!-- BUTTONS -->
         <div class="text-end order-lg-1">
           <button type="button" class="btn me-2 nav-btn d-none d-lg-inline">Join</button>
           <button type="button" class="btn nav-btn">Become a Seller</button>
         </div>
-    
+
         <!-- OFFCANVAS MENU (Visible only on mobile/tablet) -->
-        <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu"
+          aria-labelledby="mobileMenuLabel">
           <div class="offcanvas-header d-flex justify-content-between align-items-center">
             <a href="/" class="d-inline-flex align-items-center text-decoration-none">
               <img src="images/Logo.png" alt="Logo" height="30">
             </a>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-    
+
           <div class="offcanvas-body d-flex flex-column">
             <!-- Nav Links -->
             <ul class="navbar-nav">
@@ -91,12 +92,12 @@
                 </ul>
               </li>
             </ul>
-    
+
           </div>
         </div>
       </div>
     </nav>
-    
+
 
     <!-- Hero Content -->
     <div class="px-4 py-5 text-center hero-content d-md-none d-lg-block">
@@ -161,7 +162,64 @@
   </section>
 
   <section class="d-flex items-categories">
-    <div class="categories">
+    <!-- FILTER BUTTON (Visible on mobile/tablet only) -->
+
+    <div class="d-flex justify-content-between align-items-center m-4">
+      <div class="text-center mb-3 d-lg-none">
+        <button class="btn filter-btn px-4" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#filterOffcanvas" aria-controls="filterOffcanvas">
+          <i class="bi bi-funnel me-2"></i> Filter
+        </button>
+      </div>
+
+      <select class="form-select d-lg-none ms-3" style="width: 120px;">
+        <option selected disabled>Grocery</option>
+        <option value="grocery">Grocery</option>
+        <option value="bakery">Bakery</option>
+        <option value="makeup">Makeup</option>
+        <option value="bags">Bags</option>
+        <option value="clothing">Clothing</option>
+        <option value="furniture">Furniture</option>
+        <option value="daily-needs">Daily Needs</option>
+        <option value="books">Books</option>
+        <option value="gadget">Gadget</option>
+        <option value="medicine">Medicine</option>
+      </select>
+    </div>
+
+
+    <!-- OFFCANVAS FOR CATEGORIES -->
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="filterOffcanvas"
+      aria-labelledby="filterOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 id="filterOffcanvasLabel" class="mb-0">Filter by Category</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Categories Accordion copied inside offcanvas -->
+        <div class="accordion" id="accordionExampleMobile">
+          <!-- Paste your full accordion here (same as desktop) -->
+          <!-- Example -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed category-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOneMobile" aria-expanded="false" aria-controls="collapseOneMobile">
+                <img src="icons/grocery.svg" alt="" class="me-2 icons">Fruits & Vegetables
+              </button>
+            </h2>
+            <div id="collapseOneMobile" class="accordion-collapse collapse" data-bs-parent="#accordionExampleMobile">
+              <div class="accordion-body">
+                <a href="#" class="d-block mb-2">Fruits</a>
+                <a href="#" class="d-block">Vegetables</a>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat rest of accordion items here -->
+        </div>
+      </div>
+    </div>
+
+    <div class="categories d-none d-lg-block">
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h6 class="accordion-header category">
