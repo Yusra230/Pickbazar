@@ -1,5 +1,5 @@
 # PickBazar Clone 🛒
-
+[![PickBazar Clone](./images/PickBazar%20Banner.png)](https://yusra230.github.io/Pickbazar/)
 A responsive, multi-page frontend clone of [PickBazar](https://pickbazar-react-rest.vercel.app/), built as part of my capstone project. The website recreates the original platform's layout and shopping experience with a focus on clean UI, responsive design, and consistent styling.
 
 ## Live Demo
